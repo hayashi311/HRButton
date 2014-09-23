@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kV6-6O-JRn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jCk-V9-GNO">
+            <objects>
+                <viewController id="kV6-6O-JRn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48h-bN-4Lb"/>
+                        <viewControllerLayoutGuide type="bottom" id="r04-uB-8L6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fae-bz-k83">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3K-lh-aDE" customClass="HRButton">
+                                <rect key="frame" x="162" y="277" width="277" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="gSc-JA-hS4"/>
+                                    <constraint firstAttribute="width" constant="277" id="yzy-qK-YvX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTintColor">
+                                        <color key="value" red="0.18039215689999999" green="0.2274509804" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selected" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="hogeaaa"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpx-xc-8Oy" customClass="HRClassicButton">
+                                <rect key="frame" x="162" y="116" width="277" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Fld-XA-C28"/>
+                                    <constraint firstAttribute="width" constant="277" id="aPi-M5-ih0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R3K-lh-aDE" firstAttribute="top" secondItem="48h-bN-4Lb" secondAttribute="bottom" constant="257" id="1eR-Bf-99W"/>
+                            <constraint firstItem="qpx-xc-8Oy" firstAttribute="top" secondItem="48h-bN-4Lb" secondAttribute="bottom" constant="96" id="B4C-Tq-6i7"/>
+                            <constraint firstAttribute="centerX" secondItem="qpx-xc-8Oy" secondAttribute="centerX" constant="-0.5" id="Ouc-vW-JEh"/>
+                            <constraint firstAttribute="centerX" secondItem="R3K-lh-aDE" secondAttribute="centerX" constant="-0.5" id="Ti6-Z7-zQO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOK-3U-K6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="409"/>
+        </scene>
+    </scenes>
+</document>
