@@ -1,0 +1,10 @@
+target 'HRButton', :exclusive => true do
+  pod "HRButton", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "HRButton", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
