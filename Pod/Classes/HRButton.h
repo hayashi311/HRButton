@@ -11,7 +11,7 @@
 IB_DESIGNABLE
 @interface HRButton : UIControl
 
-@property (nonatomic, strong) IBInspectable UIColor *selectedTintColor;
+@property (nonatomic, strong) IBInspectable UIColor *highlightedTintColor;
 @property (nonatomic, strong) IBInspectable NSString *title;
 @property (nonatomic, strong) IBInspectable UIColor *titleColor;
 @property (nonatomic) IBInspectable NSUInteger cornerRadius;

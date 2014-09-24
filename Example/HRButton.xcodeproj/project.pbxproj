@@ -23,6 +23,8 @@
 		A3419E152F2F4CDE9A795AAA /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8628B82EEDE34EF7B384499C /* libPods-Tests.a */; };
 		AF2FA0E2AA224A1B9A209455 /* libPods-HRButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E926078811A46D48E211F48 /* libPods-HRButton.a */; };
 		DA601A1019D1960400C66279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA601A0F19D1960400C66279 /* Main.storyboard */; };
+		DA601A2019D1A1B700C66279 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DA601A1B19D1A1B700C66279 /* .gitkeep */; };
+		DA601A2119D1A1B700C66279 /* HRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA601A1D19D1A1B700C66279 /* HRButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		8628B82EEDE34EF7B384499C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35A8230DBCB493598918D22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DA601A0F19D1960400C66279 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DA601A1B19D1A1B700C66279 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DA601A1C19D1A1B700C66279 /* HRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRButton.h; sourceTree = "<group>"; };
+		DA601A1D19D1A1B700C66279 /* HRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRButton.m; sourceTree = "<group>"; };
 		ED10B87F89AC4E87B50A661D /* Pods-HRButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRButton.xcconfig"; path = "Pods/Pods-HRButton.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +134,7 @@
 		6003F593195388D20070C39A /* HRButton */ = {
 			isa = PBXGroup;
 			children = (
+				DA601A1A19D1A1B700C66279 /* Classes */,
 				6003F59C195388D20070C39A /* HRAppDelegate.h */,
 				6003F59D195388D20070C39A /* HRAppDelegate.m */,
 				6003F5A5195388D20070C39A /* HRViewController.h */,
@@ -178,6 +184,17 @@
 				D35A8230DBCB493598918D22 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		DA601A1A19D1A1B700C66279 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA601A1B19D1A1B700C66279 /* .gitkeep */,
+				DA601A1C19D1A1B700C66279 /* HRButton.h */,
+				DA601A1D19D1A1B700C66279 /* HRButton.m */,
+			);
+			name = Classes;
+			path = ../../Pod/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +281,7 @@
 				DA601A1019D1960400C66279 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				DA601A2019D1A1B700C66279 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +366,7 @@
 				6003F59E195388D20070C39A /* HRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HRViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DA601A2119D1A1B700C66279 /* HRButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -104,7 +104,6 @@
 		D60C8D3E5ADA43ECB19D92B5 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 156C2D9176F8437A975CBDB6 /* EXPMatchers+conformTo.h */; };
 		D991879A83B447E8942BF285 /* libPods-HRButton-HRButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D16668F9626A41229BD0EB86 /* libPods-HRButton-HRButton.a */; };
 		DA601A1819D1A15500C66279 /* HRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA601A1519D1A15500C66279 /* HRButton.m */; };
-		DA601A1919D1A15500C66279 /* HRClassicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA601A1719D1A15500C66279 /* HRClassicButton.m */; };
 		DBC5F905E2C843F5A265AF49 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F6F66C7FA40F08C14EEFF /* EXPMatchers+beFalsy.m */; };
 		DF95E680C9FA4A6389E5B89E /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B2EF16C74964BB7AAEA7 /* EXPMatchers+equal.m */; };
 		DFD46979CE1F47C49179A74B /* Pods-HRButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 319279A3B0064CB69B057722 /* Pods-HRButton-dummy.m */; };
@@ -290,8 +289,6 @@
 		D86890499B2A4404934D70B9 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "src/matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
 		DA601A1419D1A15500C66279 /* HRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRButton.h; path = Pod/Classes/HRButton.h; sourceTree = "<group>"; };
 		DA601A1519D1A15500C66279 /* HRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRButton.m; path = Pod/Classes/HRButton.m; sourceTree = "<group>"; };
-		DA601A1619D1A15500C66279 /* HRClassicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRClassicButton.h; path = Pod/Classes/HRClassicButton.h; sourceTree = "<group>"; };
-		DA601A1719D1A15500C66279 /* HRClassicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRClassicButton.m; path = Pod/Classes/HRClassicButton.m; sourceTree = "<group>"; };
 		DA760ABFD9A04F06A015BBB4 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = src/SPTSpec.h; sourceTree = "<group>"; };
 		DB3F053B3F8A4942AFD191C4 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "src/matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
 		DB5C250398A14415A673D145 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "src/matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
@@ -509,8 +506,6 @@
 			children = (
 				DA601A1419D1A15500C66279 /* HRButton.h */,
 				DA601A1519D1A15500C66279 /* HRButton.m */,
-				DA601A1619D1A15500C66279 /* HRClassicButton.h */,
-				DA601A1719D1A15500C66279 /* HRClassicButton.m */,
 				2D4C193287654DB0B21450C7 /* Support Files */,
 			);
 			name = HRButton;
@@ -925,7 +920,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA601A1919D1A15500C66279 /* HRClassicButton.m in Sources */,
 				DA601A1819D1A15500C66279 /* HRButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1113,7 +1107,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -1238,7 +1232,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -1404,6 +1398,7 @@
 		D6A58F1897654306A994063C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1442,6 +1437,7 @@
 		F90022A2B70B4AC09014D2B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

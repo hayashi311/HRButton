@@ -17,11 +17,24 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.label = [[UILabel alloc] init];
-        self.label.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:self.label];
+        [self setUp];
     }
     return self;
+}
+
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self setUp];
+    }
+    return self;
+}
+
+- (void)setUp {
+    self.label = [[UILabel alloc] init];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.label];
 }
 
 - (void)layoutSubviews {
@@ -50,12 +63,17 @@
     [self setNeedsDisplay];
 }
 
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+    [self setNeedsDisplay];
+}
+
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *rectanglePath;
     rectanglePath = [UIBezierPath bezierPathWithRoundedRect:rect
                                                cornerRadius:self.cornerRadius];
-    if (self.selected) {
-        [self.selectedTintColor setFill];
+    if (self.highlighted) {
+        [self.highlightedTintColor setFill];
     } else {
         [self.tintColor setFill];
     }
